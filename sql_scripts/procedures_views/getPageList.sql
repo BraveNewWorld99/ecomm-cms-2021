@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE  PROCEDURE getPageList(IN numRows INT(7))
+
+BEGIN
+
+    START TRANSACTION;
+
+    SELECT SQL_CALC_FOUND_ROWS * FROM pages LIMIT numRows;
+
+    COMMIT;
+
+END $$
+
+DELIMITER ;

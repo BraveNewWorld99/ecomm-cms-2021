@@ -1,0 +1,2 @@
+CREATE VIEW getUsers AS
+SELECT * FROM users;

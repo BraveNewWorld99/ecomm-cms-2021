@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE  PROCEDURE getUserByID(IN _user_id MEDIUMINT(6))
+
+BEGIN
+
+    START TRANSACTION;
+
+    SELECT * FROM users WHERE user_id = _user_id;
+
+    COMMIT;
+
+END $$
+
+DELIMITER ;

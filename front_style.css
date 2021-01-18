@@ -1,0 +1,1513 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// *
+
+/* html, body */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body {
+    font: 1.5em Roboto;
+    color: #bdbdbd;
+    background: #fff;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* page container*/
+
+ /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#container {
+    max-width: 2048px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Font-Face */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*TODO Roboto.eot rejected by sanitizer in Firefox Developer Console */
+@font-face {
+    font-family: "Roboto";
+    src: url("/cms5/fonts/Roboto.eot"), url("/cms5/fonts/Roboto.woff");
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for top_panel.html, the very top panel which contains the phone number, search bar, and wish list */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* This is the container for the entire black panel */
+#page_header {
+    /* border: solid #668cff 1px; */
+    width: 100%;
+
+}
+
+/* This is the container for the text, top menu, and wishlist */
+#top_panel {
+    font-family: Roboto, Helvetica;
+    background-color: #000;
+    color: #bdbdbd;
+    /* border-bottom: 1px solid rgba(240,240,240,0.4); */
+
+
+}
+
+/* This is the top panel text for the phone number */
+#top_panel_text {
+    float: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    vertical-align: middle; 
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    /* border: solid #ff4d4d 1px; */
+    display: inline-block;
+    padding-top: 18px;
+
+}
+
+/* This is a filler column to create space between top_panel_text and the search bar and wishlist */
+#top_panel_center {
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+/* This is the top panel menu which includes the search bar and wishlist */
+#top_panel_menu {
+    float: right;
+   /* border: solid #000000 1px; */
+    display: inline-block;
+}
+
+/*This is the search bar */
+#header_search {
+    font-size: 11px;
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: middle;
+   /* border: solid #66ff99 1px; */
+
+}
+
+/*This is the wish list */
+#header_wishlist {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-right: 29px;
+   /* border: solid #ffff1a 1px; */
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for main menu bar */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*THIS IS THE NAVIGATION MENU FOR MOBILE USERS */
+
+@media all and (max-width: 600px) {
+
+
+
+}
+
+
+/*THIS IS THE NAVATION MENU FOR TABLETS AND DESKTOP BROWSERS */
+
+@media all and (min-width: 601px) {
+
+    nav {
+        font-family: Roboto, Helvetica;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        list-style: none;
+        text-align: center;
+        width: 100%; /*margin:20px;*/
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    nav ul ul {
+        display: none;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+        z-index: 999;
+    }
+
+    nav ul {
+        list-style: none;
+        position: relative; /*display: inline-table;*/
+    }
+
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        /*float: left;*/
+        display: inline;
+        padding: 13px 20px;
+    }
+
+    nav ul li:hover {
+
+    }
+
+    nav ul li:hover a {
+        color: #fff;
+
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 15px 20px;
+        color: #fff;
+        text-decoration: none;
+
+
+    }
+
+    nav ul ul {
+        border-radius: 0px;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    nav ul ul li {
+        font-size: .9em;
+        font-weight: normal;
+        padding: 13px 0;
+        float: none;
+        position: relative;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+    }
+
+    nav ul ul li a {
+        color: #fff;
+
+    }
+
+    nav ul ul li a:hover {
+        transition: background 0.3s;
+        transition: ease-in-out;
+        transition: border-color 0.3s;
+        transition-property: background, border-color, color;
+        transtion-duration: 0.3s, 0.3s, 0.3s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s;
+    }
+
+    nav ul ul ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+
+    nav ul li {
+        position: relative;
+        white-space: nowrap;
+    }
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for header_wrap.php, the main menu section which contains the site logo, large main menu, and shopping cart */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* This is the container for the logo, menu links, and cart */
+#header_wrap {
+    padding: 10px 0 10px;
+    color: #bdbdbd;
+   /* border: solid #000 1px; */
+
+}
+
+#header_wrap a {
+    color: #383838;
+    text-decoration: none;
+}
+
+/* This is the container for the logo */
+
+#header_left {
+   /* border: solid #66ff99 1px; */
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* This is the container for the main menu */
+
+#header_center {
+   /* border: solid #880000 1px; */
+    display: inline-block;
+
+}
+
+/* This is the container for the shopping cart count in the header */
+#header_right {
+   /* border: solid #ff2222 1px; */
+    font-family: Roboto, Helvetica;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+    vertical-align: center;
+    display: inline-block;
+    padding-top: 15px;
+
+}
+
+#item_count {
+    display: inline-block;
+
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for section_text.html, the large content text area featuring NEWEST CONTENT */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* This is the container for the large image section */
+
+#section_text_container {
+    background-image: url("/cms5/images/front_home_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 425px 200px 425px;
+    text-align: center;
+    z-index: 10;
+}
+
+/* This is the text for the section text container */
+
+#section_text_content {
+    font-family: Roboto, Helvetica;
+    display: inline-block;
+}
+
+#section_text_content h2 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+
+#section_text_content h4 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+#section_text_content button {
+
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for product_categories.php, displaying products by activated categories */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.section_heading {
+    font-family: Roboto, Helvetica;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewFrontPage */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* left_front_menu.php */
+
+#left_front_menu {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    border: black 1px;
+    margin: 3%;
+}
+
+#distinct_styles a {
+ color: black;
+
+}
+
+#price_range a {
+ color: black;
+
+}
+
+#distinct_medium a {
+ color: black;
+
+
+}
+
+
+/* layout for product views - viewByMedium, viewByStyles, viewByPrices */
+
+.item_container {
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+}
+
+
+#item_description {
+    font-family: Roboto, Helvetica;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shopping_main_section {
+    margin-left: 20%;
+    float: left;
+    display: inline-block;;
+
+}
+
+.shopping_main_banner {
+    font-family: Roboto, Helvetica;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 100px 250px;
+    margin: 3% 0px;
+}
+
+.mini_descrip {
+    font-family: Roboto, Helvetica;
+    font-size:18px;
+    color: black;
+    text-transform: uppercase;
+    padding: 1%;
+}
+
+.price_container {
+    padding: 1%;
+
+}
+
+.shopping_bag {
+    color: black;
+    display: inline-block;
+    float: left;
+}
+
+.price {
+    font-family: Roboto, Helvetica;
+    font-size:18px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    float: right;
+    padding: 5% 0 0 0;
+}
+
+/* layout for viewProduct */
+
+.left_product_menu {
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 0px;
+
+}
+
+.primary_img_container {
+    display: inline-block;
+    margin: 40px 0px 0px 40px;
+    
+}
+
+.primary_img {
+    width: 470px;
+    height: 509px;
+    float: left;
+}
+
+.single_product_info {
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px;
+}
+
+#single_product_title {
+    font-family: Roboto, Helvetica;
+    font-size: 18px;
+    color: #383838;
+    margin: 0px 0px 17px;
+}
+
+.single_product_availability {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #383838;
+}
+
+.single_product_sku {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #383838;
+
+}
+
+.single_product_artist {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #383838;
+
+}
+
+.single_product_style {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #383838;
+
+}
+
+.single_product_medium {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #383838;
+
+}
+
+.single_product_money {
+    display: inline-block;
+}
+
+#money {
+    font-family: Roboto, Helvetica;
+    font-size: 24px;
+    color: #383838;
+
+}
+
+.single_product_quantity {
+    display: inline-block;
+}
+
+.single_product_quantity label {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #383838;
+    margin: 0px 10px;
+
+}
+
+.quantity_box {
+    /* display: inline-block; */
+}
+
+.quantity_box span {
+    width: 42px;
+    height: 38px;
+    color: #000;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.quantity_box input {
+    width: 42px;
+    height: 38px;
+    display: inline-block;
+    color: #bdbdbd;
+    border: 1px solid #f0f0f0 !important;
+    font-size: 24px;
+    text-align: center;
+    line-height: 38px;
+    background: #fff;
+    box-shadow: none !important;
+    border-radius: 0;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow: hidden;
+}
+
+#single_product_add_to_cart {
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    margin: 8px 15px 0 0;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    padding: 8px 16px;
+    border-radius: 0px;
+}
+
+.wishlist_section {
+    color: #383838;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    font-size: 12px;
+
+}
+
+.wishlist_section a {
+    color: #383838;
+    text-decoration: none;
+
+}
+
+/*Styles for viewCart - the shopping cart */
+
+.shopping_cart_title {
+    margin: 15px 0 0 0;
+    padding-bottom: 10px;
+    font-family: Roboto, Helvetica;
+    color: #383838;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.cart_container table tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.column_product_image {
+    padding: 15px 15px 15px 0;
+
+}
+
+.cart_img {
+    height: 170px;
+    width: 170px;
+}
+
+.product_title{
+    color: #383838;
+    font-family: Roboto, Helvetica;
+}
+
+.empty_title {
+   /* width: 500px;*/
+}
+
+.price_title {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+    padding-right: 50px;
+}
+
+.quantity_title {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+    padding-right: 50px;
+}
+
+.total_title {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+}
+
+.column_product_info {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+    size: 14px;
+    padding: 15px 500px 15px 0;
+
+}
+
+.column_product_info p {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+
+}
+
+.cart_item_name  {
+    font-family: Roboto, Helvetica;
+    size: 12px;
+    font-weight: bold;
+}
+
+.cart_item_artist {
+    font-family: Roboto, Helvetica;
+    size: 14px;
+
+}
+
+.cart_item_style {
+    font-family: Roboto, Helvetica;
+    size: 14px;
+}
+
+.cart_item_medium {
+    font-family: Roboto, Helvetica;
+    size: 14px;
+
+}
+
+.column_price {
+    color: #006bb8;
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    vertical-align: top;
+    padding: 15px 0;
+
+}
+
+.column_quantity {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+
+}
+
+.column_total_price {
+    color: #006bb8;
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+
+}
+
+.grand_total_title {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.grand_total_money {
+    color: #006bb8;
+    font-family: Roboto, Helvetica;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#remove_item_from_cart {
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 0px;
+    width: 150px;
+    margin: 0 0 15px 0;
+}
+
+#update_item_quantity_cart {
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 0px;
+    width: 150px;
+    margin: 0 0 15px 0;
+}
+
+#proceed_to_checkout {
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 0px;
+    width: 150px;
+    margin: 0 0 15px 0;
+    text-decoration: none;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewRegisterLogin.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.my_account_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 0 0;
+    padding: 0px 0px 10px;
+}
+
+.create_account_section {
+    border: 1px solid #bdbdbd;
+    border-top: 1px solid #000;
+    padding: 15px;
+    margin: 30px 0 0;
+
+}
+
+.create_account_section h4 {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+}
+
+#note {
+    font-family: Roboto, Helvetica;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.create_account_section ul {
+    list-style: none;
+}
+
+.create_account_section ul li:before {
+    content: '✓ ';
+    color: #000;
+    font-weight: bold;
+}
+
+.create_account_section ul li {
+    font-family: Roboto, Helvetica;
+    color: #bdbdbd;
+    font-size: 14px;
+    padding: 5px 0 0;
+}
+
+.create_account_link_section {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+#create_account_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login_section {
+    border: 1px solid #bdbdbd;
+    border-top: 1px solid #000;
+    padding: 15px;
+    margin: 30px 0 0;
+}
+
+.login_section h4 {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+}
+
+.login_section label {
+    color: #000;
+}
+
+.login_section input {
+    display: block;
+    padding: 6px 10px;
+    width: 300px;
+}
+
+
+#try_user_login {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewShipInfo.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.order_summary_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+}
+
+.no_ship_cart_items {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    margin: 0 0 0 50px;
+}
+
+.login_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+}
+
+#ship_info_login_redirect {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 30px 50px 0;
+    display: block;
+}
+
+.purchase_links {
+    margin: 0px 50px;
+
+}
+
+.purchase_links a {
+    font-family: Roboto, Helvetica;
+    font-size: 18px;
+    color: #006bb8;
+
+}
+
+.pull_ship_info {
+    margin: 0px 70px 0;
+
+}
+
+.pull_ship_info label {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+
+}
+
+.ship_info_form_section {
+    margin: 0 0 50px 50px;
+}
+
+.ship_info_form_section label {
+    color: #000;
+    display: block;
+}
+
+.ship_info_form_section input {
+    display: block;
+    padding: 6px 10px;
+    width: 300px;
+}
+
+.checkout_table {
+    margin: 0 0 0 50px;
+}
+
+.checkout_table tr td {
+    padding: 0 0 20px 0;
+}
+
+.checkout_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.checkout_item_description {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    padding: 0 0 0 50px;
+}
+
+.checkout_total_price {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    padding: 0 0 0 50px;
+}
+
+.check_grand_total {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    text-align: right:
+}
+
+.shipping_address_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+
+}
+
+#ship_first_name {
+    width: 400px;
+
+}
+
+#ship_last_name {
+    width: 400px;
+
+}
+
+#ship_address1 {
+    width: 400px;
+
+}
+
+#ship_address2 {
+    width: 400px;
+}
+
+#ship_city {
+    width: 400px;
+}
+
+#ship_country {
+    width: 400px;
+}
+
+#state_drop_down {
+    width: 200px;
+    color: #383838;
+    padding: 6px 10px;
+}
+
+#ship_zip_code_post_code {
+    width: 175px;
+}
+
+#insert_ship_info {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 15px 0 0 15px;
+    display: block;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewBillInfo.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.order_summary_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+}
+
+.no_ship_cart_items {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    margin: 0 0 0 50px;
+}
+
+#bill_info_login_redirect {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 30px 50px 0;
+    display: block;
+}
+
+.pull_bill_info {
+    margin: 0px 70px 0;
+
+}
+
+.pull_bill_info label {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+}
+
+.bill_info_form_section {
+    margin: 0 0 50px 50px;
+}
+
+.bill_info_form_section label {
+    color: #000;
+    display: block;
+}
+
+.bill_info_form_section input {
+    display: block;
+    padding: 6px 10px;
+    width: 300px;
+}
+
+.checkout_table {
+    margin: 0 0 0 50px;
+}
+
+.checkout_table tr td {
+    padding: 0 0 20px 0;
+}
+
+.checkout_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.checkout_item_description {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    padding: 0 0 0 50px;
+}
+
+.checkout_total_price {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    padding: 0 0 0 50px;
+}
+
+.check_grand_total {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    text-align: right:
+}
+
+.billing_address_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+
+}
+
+#bill_first_name {
+    width: 400px;
+
+}
+
+#bill_last_name {
+    width: 400px;
+
+}
+
+#bill_address1 {
+    width: 400px;
+
+}
+
+#bill_address2 {
+    width: 400px;
+}
+
+#bill_city {
+    width: 400px;
+}
+
+#bill_country {
+    width: 400px;
+}
+
+#state_drop_down {
+    width: 200px;
+    color: #383838;
+    padding: 6px 10px;
+}
+
+#bill_zip_code_post_code {
+    width: 175px;
+}
+
+#insert_bill_info {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 15px 0 0 15px;
+    display: block;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewPaymentInfo.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.credit_card_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+}
+
+.order_disclaimer {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+
+}
+
+#credit_card_form {
+    margin: 30px 50px 0;
+}
+
+#card_number {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+    line-height: 28px;
+    width: 250px;
+
+}
+
+#card_month {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+    line-height: 28px;
+    width: 50px;
+
+}
+
+
+#card_year {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+    line-height: 28px;
+    width: 50px;
+
+}
+
+#card_cvc {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+    line-height: 28px;
+    width: 75px;
+
+}
+
+#tcs_and_cs_span {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: #383838;
+    font-weight: bold;
+}
+
+#terms_not_accepted {
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    color: darkred;
+    font-weight: bold;
+}
+
+#place_order {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 30px 15px 50px;
+    display: block;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewOrderConfirm.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.order_confirm_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 50px 0;
+    padding: 0px 0px 20px;
+}
+
+.order_confirm_text {
+    font-family: Roboto, Helvetica;
+    font-size: 18px;
+    color: #383838;
+    margin: 0px 50px 30px;
+}
+
+.order_confirm_buttons {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin: 30px 25px 50px 50px;
+    display: inline-block;
+}
+
+.order_confirm_buttons:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewCreateAccount.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.create_account_title {
+    font-family: Roboto, Helvetica;
+    font-size: 20px;
+    color: #383838;
+    margin: 30px 0 0;
+    padding: 0px 0px 10px;
+}
+
+.create_account_form_section label {
+    color: #000;
+}
+
+.create_account_form_section input {
+    display: block;
+    padding: 6px 10px;
+    width: 300px;
+}
+
+#create_user_account {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+#cancel_create_account {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #006bb8;
+    border: 1px solid #006bb8;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+.no_match {
+    font-family: Roboto, Helvetica;
+    display:block;
+    color: red;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for viewMyAccountOrders.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.column_product_information {
+    color: #383838;
+    font-family: Roboto, Helvetica;
+    size: 14px;
+    padding: 15px 200px 15px 0;
+}
+
+.column_product_information p {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for form validation */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.form_group {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    margin: 15px 0 0 15px;
+}
+
+.form_group_inline {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    margin: 15px 0 0 15px;
+    display: inline-block;
+
+}
+
+.error {
+    font-family: Roboto, Helvetica;
+    display:block;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Styles for front_footer.php */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.footer_container {
+   /* text-align: center; this is aligning the text in the child divs, not aligning the divs themselves TODO */
+}
+
+.footer_styles {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #bdbdbd;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: top;
+    border: 1px solid #bdbdbd;
+    padding: 40px;
+}
+
+.footer_info {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #bdbdbd;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: top;
+    border: 1px solid #bdbdbd;
+    padding: 40px;
+}
+
+.footer_my_account {
+    font-family: Roboto, Helvetica;
+    font-size: 14px;
+    color: #bdbdbd;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: top;
+    border: 1px solid #bdbdbd;
+    padding: 40px;
+}

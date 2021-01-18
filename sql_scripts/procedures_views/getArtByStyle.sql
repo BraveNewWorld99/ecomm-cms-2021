@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE  PROCEDURE getArtByStyle(IN _style VARCHAR(50))
+
+BEGIN
+
+    START TRANSACTION;
+
+    SELECT * FROM art WHERE style = _style;
+
+    COMMIT;
+
+END $$
+
+DELIMITER ;

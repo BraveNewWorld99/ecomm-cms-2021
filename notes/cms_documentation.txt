@@ -1,0 +1,12 @@
+There are 3 levels of users
+
+Administrators
+-Can create users
+-Can add, delete, and edit pages
+
+Website Editor
+-Can add delete, and edit pages
+
+Manager
+-Can view content and system
+

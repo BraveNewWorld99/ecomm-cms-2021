@@ -1,0 +1,37 @@
+
+Logging in, loggin out, and actions where no username is set have been accounted for using the
+following code snippet.  $action is the variable that defines what is happening. $username is a variable
+that is set if the user has logged in.
+
+$action != "login" && $action != "logout" && !$username
+
+We need to account for the following actions and add these to the code snippet above.
+The answer will be one single line of code.
+
+1.  We are resetting the password
+2.  We are updating the password
+
+These are the conditions that are true:
+A. We are not logging in as the action
+B. We are not logging out as the action
+C. No username has been set
+
+Solve where A. B. and C. are true and also 1. OR 2. are not true
+
+Answer:
+
+$action != "resetPassword" && $action != "updatePassword" && $action != "login" && $action != "logout" && !$username 
+
+NOT 1.
+AND
+NOT 2.
+AND
+NOT A.
+AND 
+NOT B.
+AND
+NOT C.
+
+
+
+

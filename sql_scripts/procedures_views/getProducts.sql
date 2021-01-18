@@ -1,0 +1,2 @@
+CREATE VIEW getProducts AS
+SELECT * FROM art LIMIT 50;

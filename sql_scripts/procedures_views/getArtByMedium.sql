@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE  PROCEDURE getArtByMedium(IN _medium VARCHAR(50))
+
+BEGIN
+
+    START TRANSACTION;
+
+    SELECT * FROM art WHERE medium = _medium;
+
+    COMMIT;
+
+END $$
+
+DELIMITER ;
